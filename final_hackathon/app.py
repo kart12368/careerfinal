@@ -24,4 +24,4 @@ def predict():
     return jsonify({'result': kar2[1]}), 200, {'Access-Control-Allow-Origin': '*'}
 
 if __name__ ==  "__main__":
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='0.0.0.0', port=10000)
