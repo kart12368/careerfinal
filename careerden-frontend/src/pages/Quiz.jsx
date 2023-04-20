@@ -53,7 +53,7 @@ const Quiz = () => {
     e.preventDefault();
 
     console.log(answers);
-    fetch('http://localhost:5000/predict', {
+    fetch('https://career-python-backend.onrender.com/predict', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
