@@ -131,7 +131,7 @@ requests-toolbelt==0.9.1
 responses==0.20.0
 rsa==4.9
 schedule==1.1.0
-scikit-learn==1.1.2
+scikit-learn==1.0.2
 scipy==1.9.1
 seaborn==0.12.2
 Send2Trash==1.8.0
