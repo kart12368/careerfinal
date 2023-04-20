@@ -1,1 +1,1 @@
-export const API = 'https://backend-career.onrender.com';
+export const API = 'https://backend-career.onrender.com/api';
