@@ -51,7 +51,7 @@ imageio-ffmpeg==0.4.7
 iniconfig==1.1.1
 instabot==0.117.0
 ipykernel==6.13.0
-ipython==8.3.0
+ipython==7.27.0
 ipython-genutils==0.2.0
 ipywidgets==7.7.0
 itsdangerous==2.1.2
