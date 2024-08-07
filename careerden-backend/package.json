@@ -4,8 +4,7 @@
   "description": "backend for career helper, ssip 2023",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "build": "netlify deploy --prod"
+    "start": "nodemon server.js"
   },
   "author": "Kuldeep Solanki",
   "license": "ISC",

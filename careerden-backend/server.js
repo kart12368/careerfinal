@@ -1,8 +1,6 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
 const express = require("express");
-const serverless = require("serverless-http");
-
 const app = express();
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
@@ -11,8 +9,8 @@ const cors = require("cors");
 const PORT = process.env.PORT || 3000;
 
 // routes
-const userRoutes = require("../routes/user");
-const authRoutes = require("../routes/auth");
+const userRoutes = require("./routes/user");
+const authRoutes = require("./routes/auth");
 
 // DB Connection
 mongoose.set("strictQuery", true);
@@ -46,6 +44,3 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-
-app.use("/.netlify/functions/app", app);
-module.exports.handler = serverless(app);
