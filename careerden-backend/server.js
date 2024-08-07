@@ -35,6 +35,9 @@ app.use(express.urlencoded({ extended: true }));
 // routes
 app.use("/api", userRoutes);
 app.use("/api", authRoutes);
+app.use("/", (req, res) => {
+  res.json({ message: "Hello" });
+});
 
 app.get("/", (req, res) => {
   res.send("backend is running!");
